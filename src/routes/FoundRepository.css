@@ -1,0 +1,64 @@
+.found-repository-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 200px;
+    color: #F8F8FF;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border-right: 2px solid rgba(120,40,183);
+    border-left: 2px solid rgba(120,40,183);
+    position: relative;
+    text-align: center;
+    top: 50px;
+    padding-left: 10px;
+}
+
+.found-repository-info figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    border-left: 2px solid rgba(120,40,183);
+    margin-left: 10px;
+}
+
+.found-repository-info figure svg {
+    transform: rotate(15deg);
+}
+
+.found-repository-info h2 {
+    word-wrap: break-word;
+    width: 68%;
+    max-width: 68%;
+    min-height: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.found-repository-info p {
+    word-wrap: break-word;
+    max-width: 68%;
+    font-size: 11px;
+    font-weight: 200;
+    color: rgba(255,255,255,0.7);
+}
+
+.found-repository-info a {
+    color: rgba(120,80,183);
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5%;
+    min-height: 10px;
+}
+
+.found-repository-info a:hover {
+    color: rgba(120,40,183);
+}
+

@@ -1,0 +1,40 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 2.5vw;
+    bottom: 3vh;
+    /* width: 200px; */
+    width: 0px; 
+    height: 0px; 
+    /* height: 150px; */
+    border-radius: 10px;
+    background-color: rgb(53, 12, 84); 
+    border: 6px solid #F8F8FF;
+    font-size: 8px;
+    color: #F8F8FF;
+    text-align: center;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.modal.show {
+    width: 200px;
+    height: 150px;
+    transition: 0.4s;
+}
+
+.modal.show h2, .modal.modal.show a {
+    display: inline;
+}
+
+.modal h2 {
+    display: none;
+}
+
+.modal a {
+    color: rgba(150,70,213);
+    text-decoration: none;
+    display: none;
+}
