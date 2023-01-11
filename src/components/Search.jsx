@@ -12,6 +12,10 @@ function Search(props) {
     const [userWasSearched, setUserWasSearched] = useState(false);
     const [searchRepository, setSearchRepository] = useState(false);
     
+    const filteredName = (name) => {
+        return name.replace(/\s/g, '');
+    }
+
     const loadUser = async (userName) => {
         const data = await fetch(`https://api.github.com/users/${userName}`).then((response) => {
             return response.json();
@@ -27,7 +31,7 @@ function Search(props) {
     }
 
     const loadRepository = async (userName, repositoryName) => {
-        const data = await fetch(`https://api.github.com/repos/${userName}/${repositoryName}`).then((response) => {
+        const data = await fetch(`https://api.github.com/repos/${filteredName(userName)}/${repositoryName}`).then((response) => {
             return response.json();
         }).catch((error) => console.error('Error: ', error));
 

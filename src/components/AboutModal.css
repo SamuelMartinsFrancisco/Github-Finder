@@ -31,6 +31,8 @@
 
 .modal h2 {
     display: none;
+    min-width: 170px;
+    
 }
 
 .modal a {
